@@ -65,8 +65,8 @@ input[type=submit] {
 </head>
 <body>
 
-<h3>Password Validation</h3>
-<p>Try to submit the form.</p>
+<h3>Quiz Registration</h3>
+<p>Please Enter Your Information</p>
 
 <div class="container">
   <form action="/action_page.php">
