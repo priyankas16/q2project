@@ -7,7 +7,7 @@
  Confirm Password: <input type="password" name="confirmPassword" id="confirmPassword"  onkeyup='check();'/> <br>
   <span id='message'></span>
   <script>
-var check = function() {
+function check() {
   if (document.getElementById('password').value ==
     document.getElementById('confirm_password').value) {
     document.getElementById('message').style.color = 'green';
