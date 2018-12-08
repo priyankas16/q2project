@@ -1,197 +1,113 @@
 <?php
 include "config.php";
-mysqli_select_db($conn, 'quiz');
+mysqli_select_db($conn, 'finalexam');
          
 $sql = "CREATE TABLE questions (
-answer BOOLEAN() AUTO_INCREMENT PRIMARY KEY, 
 question VARCHAR(50) NOT NULL,
-num int(20) NOT NULL
+answer BOOLEAN 
+
 )";
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer);
-VALUES ('SQL stands for Structured Query Language', 'T')";
+VALUES ('SQL stands for Structured Query Language', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('PHP is a client-side scripting language', 'F')";
+VALUES ('PHP is a client-side scripting language', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('SELECT is used to extract data from a database', 'T')";
+VALUES ('SELECT is used to extract data from a database', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('MODIFY is used to update data in a database', 'F')";
+VALUES ('MODIFY is used to update data in a database', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('Java is a scripting language', 'F')";
+VALUES ('Java is a scripting language', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('Localhost is the destination to view php files', 'T')";
+VALUES ('Localhost is the destination to view php files', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('PHP Stands for Pre Hyper Processor', 'F')";
+VALUES ('PHP Stands for Pre Hyper Processor', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('SELECT is a MySQL statement', 'T')";
+VALUES ('SELECT is a MySQL statement', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('<?php>...<?> is the delimiter used in php', 'F')";
+VALUES ('<?php>...<?> is the delimiter used in php', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('Document.write is used in php to display something on the screen', 'F')";
+VALUES ('Document.write is used in php to display something on the screen', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('PHP variables must start with $', 'T')";
+VALUES ('PHP variables must start with $', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
 VALUES ('POST is more secure than GET', 'T')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('/*...*/ Is the way to comment in PHP', 'T')";
+VALUES ('/*...*/ Is the way to comment in PHP', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('makecookie() is the method to create a cookie in PHP', 'T')";
+VALUES ('makecookie() is the method to create a cookie in PHP', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('= is used to check if two values are equal and of the same data type', 'F')";
+VALUES ('= is used to check if two values are equal and of the same data type', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('There are three ways of styling in CSS', 'T')";
+VALUES ('There are three ways of styling in CSS', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('script name is the correct way of referring to an external script', 'F')";
+VALUES ('script name is the correct way of referring to an external script', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('Calling a function in Javascript requires call before function', 'F')";
+VALUES ('Calling a function in Javascript requires call before function', '0')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('Do while, while, and for are all loops in javascript', 'T')";
+VALUES ('Do while, while, and for are all loops in javascript', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('if i != is the correct way to start the if statement if i is not equal to a value', 'T')";
+VALUES ('if i != is the correct way to start the if statement if i is not equal to a value', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
+mysqli_query($conn, $sql);
 $sql = "INSERT INTO questions (question, answer)
-VALUES ('<!DOCTYPE HTML> is used to indicate to the text editor that the file created is of type html', 'T')";
+VALUES ('<!DOCTYPE HTML> is used to indicate to the text editor that the file created is of type html', '1')";
  
-if (mysqli_query($conn, $sql)) {
-   // echo "Table quizzes created successfully";
-} else {
-   // echo "Error creating table: " . mysqli_error($conn);
-}
-
-$sql = "Select *
-  from (select *
-          from questions
- where rownum < 11;";
+mysqli_query($conn, $sql);
+echo "<form action = 'score.php' method = 'POST'>";
+$sql = "Select * from questions ORDER BY RAND() LIMIT 10";
 	$result = mysqli_query($conn, $sql);
 	$i = 1;
-	if(mysqli_num_rows($result) > 1){
+	if(mysqli_num_rows($result) > 0){
 	while($row = mysqli_fetch_assoc($result)) {
 	 
-	echo "$i";
+	echo "$i.". $row['question']. "<br><input type = 'radio' name = '$i' value = '1'>True <br>
+	<input type = 'radio' name = '$i' value = '0'>False<br>";
+	$answer = $row['answer'];
+	echo "<input type = 'hidden' name = 'ans$i' value = '$answer'  >";
+	$i++;
 	}
 	}
-	//.$row['question'] . "<input type = 'radio' name = "$i" value = 'true'>" True;
-	//echo "$i". ". "  .$row['question'] . "<input type = 'radio' name = "$i" value = 'false'>" False;
-	//echo "<input type = 'hidden' name = 'answer$i'> value = '$row['answer']'>";
-	//$i = 1;
+	echo "<input type = 'submit' value = 'submit'>";
+	
 	
 	
 ?>
